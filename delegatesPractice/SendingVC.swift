@@ -22,6 +22,7 @@ class SendingVC: UIViewController {
         if delegate != nil {
             guard let data = dataEntryTextField.text else {return}
             delegate?.userDidEnterData(data: data)
+            dismiss(animated: true, completion: nil)
         }
     }
     

@@ -32,7 +32,7 @@
                                     <navigationItem title="ReceivingVC" id="UX0-A1-yox">
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="SeY-dz-xNe">
                                             <connections>
-                                                <segue destination="QpI-6L-wvN" kind="show" id="wLg-jc-AFc"/>
+                                                <segue destination="QpI-6L-wvN" kind="show" identifier="showSendingVC" id="wLg-jc-AFc"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -57,6 +57,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="receivingLabel" destination="cLM-2J-jhT" id="OHn-sO-hxI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
